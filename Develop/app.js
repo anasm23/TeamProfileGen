@@ -118,20 +118,19 @@ async function promptEngr() {
     try {
         const res = await inquirer.prompt(employeeQ)
         var gitUrl = `https://github.com/${res.Github}`
-        const engineerInfo = new Engineer(res.Name, res.Id, res.Email, gitUrl);
-        defaultArr.push(engineerInfo);
+        const engineerdata = new Engineer(res.Name, res.Id, res.Email, gitUrl);
+        defaultArr.push(engineerdata);
         dataArr.push(res.Id);
         buildTeam();
     } catch (error) {
         throw new Error(error);
     }
 }
-
 async function promptIntern() {
     try {
         const res = await inquirer.prompt(employeeQ)
-        const internInfo = new Intern(res.Name, res.Id, res.Email, res.School);
-        defaultArr.push(internInfo);
+        const interndata = new Intern(res.Name, res.Id, res.Email, res.School);
+        defaultArr.push(interndata);
         dataArr.push(res.Id);
         buildTeam();
     } catch (error) {
@@ -139,7 +138,7 @@ async function promptIntern() {
     }
 }
 function renderHTML() {
-    fs.writeFileSync(outputPath, render(defaultArr), "utf-8");
+    fs.writeFileSync(outputPath, render(defaultArr));
     console.log("File generated👍");
 }
 // Initializing the application
