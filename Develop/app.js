@@ -11,7 +11,7 @@ const render = require("./lib/htmlRenderer");
 
 ///Output path and directory
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "team2.html");
 
 
 /// Array declaration
