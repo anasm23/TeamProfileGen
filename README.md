@@ -1,7 +1,7 @@
 # TeamProfileGenerator
 
 ## INTRO
-The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns. This assignment must also pass all unit tests. When the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user.
+In the command line terminal, a prompt will ask the user for information about the team manager and a mix of associating team members. This assignment must also conduct and validate all unit tests. When the user has completed building the team, the application will create an HTML file which displays a nicely formatted roster based on the information provided by the user.
 
 ## SCREENSHOTS
 <img src="Assets/Node1.png"/>
